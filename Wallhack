@@ -5,7 +5,7 @@ local WorldToViewportPoint, Vector2new, Vector3new, Vector3zero, CFramenew, Draw
 
 --// Launching checks
 
-if not getgenv().WH or getgenv().WH.WallHack then return end
+if not getgenv().pixelware or getgenv().pixelware.WallHack then return end
 
 --// Services
 
@@ -21,7 +21,7 @@ local ServiceConnections = {}
 
 --// Environment
 
-getgenv().WH.WallHack = {
+getgenv().pixelware.WallHack = {
 	Settings = {
 		Enabled = false,
 		TeamCheck = false,
@@ -120,7 +120,7 @@ getgenv().WH.WallHack = {
 	WrappedPlayers = {}
 }
 
-local Environment = getgenv().WH.WallHack
+local Environment = getgenv().pixelware.WallHack
 
 --// Core Functions
 
@@ -858,8 +858,8 @@ function Environment.Functions:Exit()
 		end
 	end
 
-	getgenv().WH.WallHack.Functions = nil
-	getgenv().WH.WallHack = nil
+	getgenv().pixelware.WallHack.Functions = nil
+	getgenv().pixelware.WallHack = nil
 
 	Load = nil; GetPlayerTable = nil; AssignRigType = nil; InitChecks = nil; UpdateCham = nil; Visuals = nil; Wrap = nil; UnWrap = nil
 end
