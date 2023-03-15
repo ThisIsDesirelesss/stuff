@@ -15,7 +15,7 @@ function obfuscate(source,VarName,WaterMark)
         local ticks = tick()
 
         if typeof(WaterMark) == "string" and WaterMark ~= nil then
-            WM = "    "..tostring(WaterMark).."\n |Secured with LuaShield by oq#6809"
+            WM = "    "..tostring(WaterMark).." | Secured with LuaShield by oq#6809"
         else
             WM = "    ".."WaterMark".." | Secured with LuaShield by oq#6809"
         end
