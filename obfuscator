@@ -68,6 +68,9 @@ function obfuscate(source,VarName,WaterMark)
 
             local topic = {
                 "Deobfuscate?",
+                "stOP READING MY CODE!",
+                "Put a fat dick in me step bro!!",
+                "You know math? sqrt(-2) * sqrt(-32) = ??",
                 "   ​   ​        ​ ",
                 "   ​   ​        ​ ",
                 "   ​   ​        ​ ",
