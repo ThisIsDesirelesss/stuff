@@ -6,6 +6,7 @@ function is_whitelisted(player)
         "Say_Chat",
         "0HSH4Y",
 	"SketchyRp1",
+	"DaHoodSlayer542",
         123456789,  -- User ID 
         "Player1",
     }
