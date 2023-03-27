@@ -1,19 +1,32 @@
+--[[
+    $$$ Stolen from Azure, BUT IM REWRITING IT AND ADDING STUFF SO DONT WORRY -oq#6809 $$$
+    0.1439227582 jump is 0.06 (my sets)
+
+0.12467245219812 legit idk
+0.129495 endo og sets
+
+    0.13237 my main and 0.13189 
+    0.13189 (thusky tracer) (lowertorso)
+    0.13419 (2-3 taps)
+    0.13237 (2-3 taps)
+    0.13481 (2-3 taps)
+    0.13745 (2-3 taps)
+    0.13189 (2-3 taps)
+    0.13913 (2-3 taps) 
+]]--
+
 __=
 
-	"Discord: Actyrn#7104, Server: .gg/wDngb2mv4H"
-
--- Credits to Elegant & Fulcrum.#2610, the original script coders!!
-
--- DO NOT EDIT BELOW IF YOU DON'T KNOW WHAT YOU'RE DOING!!
+	"Discord: oq#6809"
 
 repeat wait() until game:IsLoaded()
 
-loadstring(game:HttpGet("https://pastebin.com/raw/JFzC7iXS"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThisIsDesirelesss/stuff/main/azureremakeflags"))()
 
 -- Variables
 
 local NotifLib =
-	loadstring(game:HttpGet("https://pastebin.com/raw/KRep3e1w"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ThisIsDesirelesss/stuff/main/azureremakenotifs"))()
 
 local CamBindEnabled = false
 local TargBindEnabled = false
@@ -184,7 +197,7 @@ getrawmetatable = getrawmetatable
 setreadonly = setreadonly
 newcclosure = newcclosure
 Drawing = Drawing
-Actyrn7104 = Actyrn7104
+oq6809 = oq6809
 getnamecallmethod = getnamecallmethod
 hookmetamethod = hookmetamethod
 getcallingscript = getcallingscript
@@ -205,9 +218,9 @@ isfile = isfile
 delfile = delfile
 --]]
 
-library:CheckErrors(true, true, Plr, __, Actyrn7104) -- If you remove there's a chance script wont work, DON'T REMOVE !!
+library:CheckErrors(false, false, Plr, __, oq6809) -- If you remove there's a chance script wont work, DON'T REMOVE !!
 
-local Window = library:CreateWindow("Azure Modded | Actyrn#7104 | .gg/wDngb2mv4H", Vector2.new(492, 592), Enum.KeyCode.RightShift)
+local Window = library:CreateWindow("RoTap | oq#6809 | Dev Build", Vector2.new(492, 592), Enum.KeyCode.RightShift)
 
 local MainTab = Window:CreateTab("Main")
 local MiscTab = Window:CreateTab("Misc")
@@ -563,11 +576,11 @@ end)
 -- Code
 
 spawn(function()
-	TargetPlrStats.Name = "Actyrn#7104"
+	TargetPlrStats.Name = "oq#6809"
 	TargetPlrStats.Parent = game.CoreGui
 	TargetPlrStats.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-	Background.Name = "Actyrn#7104"
+	Background.Name = "oq#6809"
 	Background.Parent = TargetPlrStats
 	Background.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Background.BorderSizePixel = 0
@@ -575,7 +588,7 @@ spawn(function()
 	Background.Size = UDim2.new(0, 358, 0, 71)
 	Background.Visible = false
 
-	Picture.Name = "Actyrn#7104"
+	Picture.Name = "oq#6809"
 	Picture.Parent = Background
 	Picture.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Picture.BorderSizePixel = 0
@@ -584,7 +597,7 @@ spawn(function()
 	Picture.Transparency = 1
 	Picture.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
-	Top.Name = "Actyrn#7104"
+	Top.Name = "oq#6809"
 	Top.Parent = Background
 	Top.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Top.BorderSizePixel = 0
@@ -607,7 +620,7 @@ spawn(function()
 	UIGradient4.Rotation = 90
 	UIGradient4.Parent = HealthBar
 
-	HealthBarBackground.Name = "Actyrn#7104"
+	HealthBarBackground.Name = "oq#6809"
 	HealthBarBackground.Parent = Background
 	HealthBarBackground.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	HealthBarBackground.BorderSizePixel = 0
@@ -615,14 +628,14 @@ spawn(function()
 	HealthBarBackground.Size = UDim2.new(0, 270, 0, 19)
 	HealthBarBackground.Transparency = 1
 
-	HealthBar.Name = "Actyrn#7104"
+	HealthBar.Name = "oq#6809"
 	HealthBar.Parent = HealthBarBackground
 	HealthBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	HealthBar.BorderSizePixel = 0
 	HealthBar.Position = UDim2.new(-0.00336122862, 0, 0.164894029, 0)
 	HealthBar.Size = UDim2.new(0, 130, 0, 19)
 
-	NameOfTarget.Name = "Actyrn#7104"
+	NameOfTarget.Name = "oq#6809"
 	NameOfTarget.Parent = Background
 	NameOfTarget.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	NameOfTarget.BackgroundTransparency = 1
@@ -647,7 +660,7 @@ spawn(function()
 	TargCursorDot.Radius =	7
 	TargCursorDot.NumSides = 69
 
-	TargDotBillboard.Name = "Actyrn#7104"
+	TargDotBillboard.Name = "oq#6809"
 	TargDotBillboard.Adornee = TargDotParent
 	TargDotBillboard.Size = UDim2.new(0.6, 0, 0.6, 0)
 	TargDotBillboard.AlwaysOnTop = true
@@ -1067,7 +1080,7 @@ spawn(function()
 
 				if TargetAimbot.Notifications then
 					NotifLib.Notify({
-						Title = "Azure Modded [Actyrn#7104]", 
+						Title = "RoTap [oq#6809]", 
 						Description = "Targeting: " ..tostring(TargetPlr.Character.Humanoid.DisplayName), 
 						Duration = 3
 					})
@@ -1075,7 +1088,7 @@ spawn(function()
 			else
 				if TargetAimbot.Notifications then
 					NotifLib.Notify({
-						Title = "Azure Modded [Actyrn#7104]", 
+						Title = "RoTap [oq#6809]", 
 						Description = "Untargeting: " ..tostring(TargetPlr.Character.Humanoid.DisplayName), 
 						Duration = 3
 					})
@@ -1095,7 +1108,7 @@ spawn(function()
 
 				if CameraAimbot.Notifications then
 					NotifLib.Notify({
-						Title = "Azure Modded [Actyrn#7104]", 
+						Title = "RoTap [oq#6809]", 
 						Description = "Targeting: " ..tostring(CamlockPlr.Character.Humanoid.DisplayName), 
 						Duration = 3
 					})
@@ -1103,7 +1116,7 @@ spawn(function()
 			else
 				if CameraAimbot.Notifications then
 					NotifLib.Notify({
-						Title = "Azure Modded [Actyrn#7104]", 
+						Title = "RoTap [oq#6809]", 
 						Description = "Untargeting: " ..tostring(CamlockPlr.Character.Humanoid.DisplayName), 
 						Duration = 3
 					})
