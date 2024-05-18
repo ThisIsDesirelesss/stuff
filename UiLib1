@@ -541,13 +541,6 @@ function library:CreateWindow(WName)
 		end)
 		ui:Resize()
 	end
-	pcall(function()
-		game:GetService("StarterGui"):SetCore("SendNotification", {
-        	Title = "Loaded",
-        	Text = "Made by @oq7y",
-        	Duration = 5
-   	 	})
-	end)
 	return ui
 end
 
